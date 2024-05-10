@@ -9,8 +9,8 @@ router.get('/home',(req,res)=>{
     console.log("dispalying");
     res.render('index')
 })
-router.get('/story',(req,res)=>{
-    res.render('./pages/story')
+router.get('/about',(req,res)=>{
+    res.render('./pages/about')
 })
 router.get('/products',async (req,res)=>{     //read 
     let products= await Product.find({})
